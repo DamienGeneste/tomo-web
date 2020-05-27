@@ -229,10 +229,15 @@ section img
   box-shadow: 6px 6px 6px black;
   border-radius: 15px 15px 15px 15px; 
   max-width: 20%;
-  max-height: 30%;
+  /*max-height: 30%;*/
   min-width: 200px;
-  min-height: 200px;
+  /*min-height: 200px;*/
   display: block; /* remove extra space below image */ 
+}
+
+section figcaption
+{
+  overflow: auto;	
 }
 /*figure figcaption
 {

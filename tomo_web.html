@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>La tomographie sous tous les angles</title>
+    </head>
+
+    <body>
+      <div id="bloc_page">
+          <header>
+            <div id="titre_principal">
+              <h1 id="haut"> La tomographie sous tous les angles </h1>
+            </div>
+
+            <nav>
+              <ul id="menu">
+                <li><a href="#p1">La reconstruction tomographique, qu’est-ce que c’est ?</a></li>
+                <li><a href="#p2">Vous faites de la tomographie sans le savoir ! </a></li>
+                <li><a href="#p3">Devenez accros aux nonogrammes ! </a></li>
+                <li><a href="#p4">Et les ordinateurs, comment font-ils ?</a></li>
+                <li><a href="#p5">Un bel exemple de problème… mal posé !</a></li>
+                <li><a href="#p6">Pour aller plus loin</a></li>
+                <li><a href="#p7">Avec plus de projections</a></li>
+                <li><a href="#p8">Quand on connaît l’objet, mais pas sa position</a></li>
+                <li><a href="#p9">En conclusion</a></li>
+              </ul>
+            </nav>
+
+          </header>
+
+          <section>
+
+        <h2 id="p1"> La reconstruction tomographique, qu’est-ce que c’est ? <span><a href="#">[haut]</a></span> </h2>
+
+        <p> C’est l’art de pouvoir reconstruire un volume à partir d’images planes. L’architecte, par exemple, peut souhaiter visualiser un bâtiment en 3 dimensions à partir de photos prises sur le site. Un médecin voudrait avoir une vision 3D de l’intérieur du corps de son patient à partir de de radiographies à rayons X . Un expert en cristallographie veut connaître la structure en 3 dimensions d’un cristal ou d’un matériau à partir des données recueillies au Microscope Electronique à Balayage (MEB) en 2 dimensions, pour en déduire ses caractéristiques physiques. Le chercheur en mécanique des fluides que je suis, lui, est intéressé par la traque des informations de vitesse dans le mouvement d’air autour d’une voiture. En filmant le passage de millions de petites particules, il peut reconstruire en 3D et en temps réel la position de chacune d’entre elles pour étudier l’aérodynamisme de l’ensemble.
+        </p>
+
+
+        <h2 id="p2"> Vous faites de la tomographie sans le savoir !<span><a href="#">[haut]</a></span></h2>
+
+
+        <p>Votre cerveau fait lui aussi régulièrement de la tomographie. Vous pouvez faire cet exercice simple pour vous en persuader : fermez un œil, bras demi-tendus et rapprochez doucement vos deux index l'un de l'autre pour qu'ils se touchent. Sans tricher, l'exercice devient très vite difficile. Mais si on rouvre le deuxième œil, il est aisé de voir combien l'emploi simultané de nos deux yeux et l'intégration des différentes informations par notre cerveau nous permet d'évaluer rapidement la profondeur. Et de se rendre compte par là même occasion de l'air très amusé du voisin d'en face qui se demande ce que vous fabriquez !<br />
+
+        Le super-ordinateur qu’est notre cerveau récupère en permanence les images délivrées par chacun de nos yeux, qui ont des angles de vue légèrement différents, et reconstruit ainsi une image de l’environnement qui nous entoure en 3 dimensions : c’est ce que l’on appelle la vision stéréoscopique. Cette reconstruction est un art compliqué, même pour notre cerveau. Aussi, parfois, il arrive qu’il soit obligé de tricher un peu et d’interpréter cette reconstruction.  Ce qui peut conduire à des illusions d’optiques.    </p>
+
+
+        <h2 id="p3"> Devenez accros aux nonogrammes !  <span><a href="#">[haut]</a></span></h2>
+
+        <p>Un jeu proche de la tomographie existe également depuis les années 70, que l’on nomme parfois nonogramme, parfois picross ou même logimage mais le principe reste exactement le même. Il s’agit de noircir autant de cases dans chaque ligne et chaque colonne que les nombres indiqués sur les côtés de la grille de jeu. Très souvent la solution permet de retrouver une image mais pas toujours. Nous avons mis un exemple ci-dessous :    </p>
+
+        <figure>
+          <img src="images/nonogramme1.png" alt="Grille de nonogramme" />
+        </figure>
+        <div class="telechargement"> 
+          <a href="Excel/Nonogrammes.ods.zip" class="bouton_rouge"> Excel </a>
+          <a href="jeux_1a4_PDF/Nonogrammes.pdf" class="bouton_rouge"> PDF </a>
+        </div>
+
+
+
+        <h2 id="p4">Et les ordinateurs, comment font-ils ?<span><a href="#">[haut]</a></span></h2>
+
+
+        <p>Pour un ordinateur, la tâche est plus ardue. D’abord parce que l'idée même de volume n’est pas ‘naturelle’ pour lui ! Pour pallier ce problème, les informaticiens ont recours au Voxel. Comme son homologue le Pixel, petit carré de base de nos photos numériques, le Voxel est un petit cube dans l’espace contenant une information de couleur. </p>
+
+        <figure>
+          <img src="images/pixel.png" alt="figure gauche grille noircies pour former une boule en 2 dimension les pixel en 2D figure droite pixel en 3 dimensions avec des cubes empilés" />
+          <figcaption>© <a href="http://dx.doi.org/10.1016/j.addma.2016.10.006/CCBY4.0."> http://dx.doi.org/10.1016/j.addma.2016.10.006/CCBY4.0</a></figcaption>
+       </figure>
+
+       <p>
+          Pour la reconstruction volumique, une technique beaucoup utilisée en médecine consiste à simplifier encore le problème pour l’ordinateur : travailler en coupes, comme en cuisine. Plutôt que de reconstruire le volume entièrement, nous pouvons le trancher en rondelles – virtuellement bien sûr - dans le sens de la longueur. Il sera ensuite plus facile de faire des reconstructions tomographiques plan par plan. Chaque plan sera alors superposé sur les autres pour finalement reconstruire le corps entier. Un peu comme si on reconstituait un légume déjà tranché en accolant toutes ses coupes.
+       </p>
+
+       <figure>
+         <img src="images/radis.jpg" alt="Plan de travail avec légumes tranchés" style="max-width:60%; min-width:500px"/>
+         <figcaption>© <a href="http://dx.doi.org/10.1016/j.addma.2016.10.006/CCBY4.0."> http://dx.doi.org/10.1016/j.addma.2016.10.006/CCBY4.0</a></figcaption>
+       </figure>
+
+       <p> Autre problème, plus délicat : ni les ordinateurs les plus perfectionnés, ni même la fameuse Intelligence Artificielle (IA) ne sont pour l’instant pourvus de la capacité à interpréter les reconstitutions de volumes qu’ils construisent Pour comprendre cette difficulté, imaginons la situation suivante : sur une table sont placés un cône puis une pyramide à base triangulaire. Vous placez vos yeux au ras de la table, face à l’axe du cône ou une arête de la pyramide. L’un de votre œil voit à chaque fois la même projection du volume, qu’il soit cône ou pyramide : il s’agit d’un triangle. Donc, si vous utilisiez uniquement les images que recevaient vos yeux, vous ne seriez pas en mesure de faire la différence entre le cône et la pyramide car ces deux objets renvoient exactement les mêmes projections ! Comment se fait-il alors que le cerveau soit capable de distinguer ces deux objets ?    <br />
+
+En fait, le réfléchissement de la lumière sur l’objet, l’état de la surface (par exemple avec la présence d’arêtes) ou encore les ombres sont autant d’informations supplémentaires intégrées par notre cerveau pour ‘sélectionner’ une forme plutôt qu’une autre. Dans ce contexte, on peut s’imaginer combien l’art de la reconstruction volumique peut devenir un véritable casse-tête pour les ordinateurs !    </p>
+   
+      <h2 id="p5"> Un bel exemple de problème… mal posé !<span><a href="#">[haut]</a></span></h2>
+
+      <p>Nous pouvons donc avoir deux, trois, voire davantage d’objets possibles ayant la même projection : notre problème peut avoir différentes solutions possibles. Par ailleurs, une petite perturbation des données de départ peut modifier ostensiblement le rendu de l’objet reconstitué. Ce qui est d’autant plus compliqué pour les physiciens en proie aux erreurs de mesures. Enfin, nous ne savons en général pas s’il est possible d’associer un objet 3D à un jeu de projections donné. Autrement dit le problème de reconstruction n’a pas toujours de solution ! Ces trois points sont exactement ce qui fait qu’un problème est dit « mal posé » en mathématiques. Il est pourtant indispensable de trouver des méthodes de résolution acceptables... <br />
+
+Dans la suite, nous considérons un exemple de jeu qui se rapproche davantage de la résolution tomographique. Voici des grilles dans lesquelles les cases peuvent être blanches ou noires. Le nombre de cases noires sur chaque ligne et colonne est reporté sur les bords du tableau. Attention ! Le nombre indiqué est ici une projection, et les cases noires ne sont pas nécessairement contiguës, contrairement au nonogramme. Voici un exemple comportant deux solutions différentes :    </p>
+
+    <figure>
+      <img src="images/grilleEnonce.png" alt="grille" />
+    </figure>
+
+    <figure>
+      <img src="images/grillesJeu.png" alt="grille" />
+    </figure>
+
+    <p> JEU N°2 : Saurez-vous retrouver à quel endroit se trouvent les cases noires dans ces deux grilles ? Y a-t-il plusieurs solutions ?
+    </p>
+
+    <div class="telechargement"> 
+      <a href="Excel/Jeu n°2.ods.zip" class="bouton_rouge"> Excel </a>
+      <a href="jeux_1a4_PDF/Jeu n°2.pdf" class="bouton_rouge"> PDF </a>
+    </div>
+    <div class="PourAllerPlusLoin">
+      <div id="TitlePourAllerPlusLoin">
+        <h2 id="p6">Pour aller plus loin <span><a href="#">[haut]</a></span></h2></div>
+
+<article>
+    <p>Dans son article de 1957 (« <em>Combinatorial properties of matrices of zeros and ones</em> »), le mathématicien américain H.J. Ryser donne une condition nécessaire et suffisante pour savoir si une solution à ce genre de problèmes est possible et comment la construire. Et il explique comment savoir si une solution est unique : il faut et il suffit qu’aucune bascule ne soit possible. Dans le cas de deux projections (horizontale et verticale), une bascule est une situation que les amateurs de jeux de grilles connaissent bien : elle survient lorsqu’il est possible d’échanger la position de deux cases noires avec deux cases blanches sans modifier les projections. <br />
+
+Regardons par exemple les 4 cases au sommet du carré de cette grille. Une case est soit noire, soit blanche. Nous savons que la grille contient respectivement 1, 0 puis 1 case noire par colonne, idem pour les lignes. Impossible alors de savoir s’il faut placer les deux cases noires selon l’une ou l’autre diagonale !  </p>
+
+
+    <figure>
+      <img src="images/bascule.png" alt="bascules" />
+    </figure>
+
+    <p>
+Plus généralement, si la solution n'est pas unique, c'est qu'il manque des informations ou qu’il y a, grossièrement, plus d’inconnues que de projections. Nous pouvons alors passer à un nombre encore plus grand de projections: 3, 4, 5, 10, 100 ou plus encore. Mais nous voyons bien que le problème devient très rapidement illisible et compliqué. Nous laisserons alors le soin à un ordinateur de nous trouver la bonne solution, ou au moins la meilleure possible!      </p>
+
+    </article>
+    </div>
+
+    <h2 id="p7"> Avec plus de projections <span><a href="#">[haut]</a></span></h2>
+
+    <p>En pratique, nous tentons ici de reconstituer une image à partir de 2 projections, C’est déjà mieux qu’une seule, qui fait disparaître toute notion de profondeur, mais comme il n’est pas rare de trouver deux images différentes qui renvoient les mêmes projections, la solution qui s’impose rapidement est d’augmenter le nombre de projections.</p> 
+
+    <figure>
+      <img src="images/projection.png" alt="3 projections differentes" />
+    </figure>
+
+
+    <p> Passons donc de 2 projections à 3 en considérant une troisième direction, diagonale cette fois-ci. Un peu comme un médecin qui ne se contente pas de 2 angles de vues sur des radiographies pour repérer une lésion.<br />
+
+Voici donc un nouveau jeu où, comme précédemment, l’objectif est de noircir les cases pour faire en sorte que le nombre de cases noires sur chaque ligne, chaque colonne soit celui reporté sur les bords de la grille. Mais cela doit maintenant aussi être vrai sur les diagonales…</p>
+
+    <figure>
+      <img src="images/jeu3.png" alt="grille de jeu numero 3" />
+    </figure>
+
+    <p>JEU N°3 : Saurez-vous retrouver à quel endroit se trouvent les cases noires dans ces quatre grilles ? Y a-t-il une solution unique ?</p>
+
+    <div class="telechargement"> 
+      <a href="Excel/Jeu n°3.ods.zip" class="bouton_rouge"> Excel </a>
+      <a href="jeux_1a4_PDF/Jeu n°3.pdf" class="bouton_rouge"> PDF </a>
+    </div>
+
+    <h2 id="p8">Quand on connaît l’objet, mais pas sa position <span><a href="#">[haut]</a></span></h2>
+
+
+    <p>Dans certains cas, comme en mécaniques des fluides par exemple, on connaît la forme des objets recherchés, il ne reste qu’à connaître leur position, ce qui fournit incontestablement des informations supplémentaires pouvant aider à la résolution. <br />
+
+Voyons cela dans un nouveau jeu : comme précédemment, les cases sont à noircir en tenant compte des numéros portés sur les lignes, les colonnes et les diagonales. Mais, en plus, nous savons que les cases noires sont nécessairement regroupées 4 par 4 pour former des « L », qui peuvent être tournés dans tous les sens comme ci-dessous : </p> 
+
+    <figure>
+      <img src="images/L.png" alt="case noircies en forme de L" />
+    </figure>
+
+    <figure>
+      <img src="images/jeu4.png" alt="jeu 4" />
+    </figure>
+
+    <div class="telechargement"> 
+      <a href="Excel/Jeu n °4.ods.zip" class="bouton_rouge"> Excel </a>
+      <a href="jeux_1a4_PDF/Jeu n°4.pdf" class="bouton_rouge"> PDF </a>
+    </div>
+
+    <h2 id="p9">En conclusion <span><a href="#">[haut]</a></span></h2>
+
+    <p>Beaucoup de problèmes liés à la tomographie (dont les jeux 1, 3 et 4) appartiennent à une grande famille de problèmes nommée NP-complets, dont font partie également les problèmes de remplissage de grilles de Sudoku. La résolution de ce type de problèmes, à part dans de rares cas construits pour l’exercice, s’avère très compliquée, même pour un ordinateur. Pour rajouter de la complexité, dans la pratique il n’est pas rare de commencer avec des petites grilles de plusieurs millions de cases !<br />
+
+    Nous l’avons vu, la reconstruction tomographique intéresse de nombreux domaines des sciences. Au-delà du jeu, ce beau problème mélange plusieurs branches des mathématiques et de l’informatique : l’analyse combinatoire, la théorie des groupes et la théorie des graphes mais aussi l’algorithmique et la programmation.<br />
+
+    Enfin, de manière assez étonnante, la reconstruction tomographique peut intéresser aussi d’autres domaines de recherche parfois relativement éloignés du problème de départ. Ainsi, en compression d’image, il serait intéressant, pour minimiser la taille des données, de n’envoyer que les projections d’une photo… si on était capable de reconstruire la photo à partir de ce seul jeu de données !</p>
+
+    <p class="signature">
+      Damien Geneste
+    </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>Foot</p>
+  </footer>
+       
+
+    </body>
+</html>
+

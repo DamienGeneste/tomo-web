@@ -1,0 +1,258 @@
+/* Elements principaux de la page */
+body
+{
+  background: url('images/fond_jaune.png');
+  font-family: Arial, sans-serif;
+  color: #181818;
+}
+
+#bloc_page
+{
+  width: 90%;
+  margin: auto;
+}
+
+section h2, footer h1, nav a
+{
+  font-family: serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/*Header*/
+header
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-item: flex-end;
+  
+}
+
+header h1
+{ 
+  font-family: Arial,serif;
+  font-size: 2.5em;
+  font-weight: bold; 
+  margin: 0 0 0 10px;
+  text-align: center;
+}
+
+
+/* Navigation */
+nav ul
+{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+nav li{
+  margin: 4px 0;
+}
+
+nav a 
+{
+  font-size: 0.8em;
+  color: #181818;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  text-decoration: none;
+  font-weight:bold;
+}
+nav a:hover
+{
+  color: #760001;
+  border-bottom: 3px solid #760001;
+ }
+
+#topsection {
+  display:flex;
+}
+
+/* Corps */
+
+.telechargement
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+    /*max-width: 50%;*/
+}
+.bouton_rouge:nth-child(1)
+{
+    height: 25px;
+    right: 5px;
+    bottom: 5px;
+    background-image: linear-gradient(#55AAFF,#000055);
+    border: 1px solid #000055;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    /*color: white;*/
+    text-decoration: none;
+  box-shadow: 6px 6px 6px black;
+}
+.bouton_rouge:nth-child(2)
+{
+    height: 25px;
+    right: 5px;
+    bottom: 5px;
+    background-image: linear-gradient(#00AA00,#005500);
+    border: 1px solid #228B22;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    /*color: white;*/
+    text-decoration: none;
+  box-shadow: 6px 6px 6px black;
+}
+.telechargement a
+{
+  color: white;
+}
+.telechargement a:hover
+{
+  color: white;
+  text-decoration: underline;
+}
+
+section
+{
+  display: flex;
+  flex-direction: column;  
+  margin-bottom: 20px;
+}
+
+
+section p 
+{
+  font-size: 1.2em;
+  width: 90%;
+  text-align: justify;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+section h2
+{
+  font-size: 1.2em;
+  margin-left:auto;
+  margin-right:auto; 
+  color: #760001 ; 
+}
+
+section img
+{
+  margin-right:auto;
+  margin-left:auto;
+  border: 5px black solid;
+  box-shadow: 6px 6px 6px black;
+  border-radius: 15px 15px 15px 15px; 
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */ 
+}
+
+/*figure figcaption
+{
+  position: absolute;
+}*/
+
+section span
+{
+  font-size: 0.7em;
+  text-transform: lowercase;
+}
+section figure
+{
+  text-align: center;
+}
+
+
+
+
+/* Background */
+
+
+.PourAllerPlusLoin
+{
+  display: flex;
+  flex-direction: column; 
+  border-radius: 15px 15px 15px 15px;
+  border: 5px black solid;
+  box-shadow: 6px 6px 6px black;
+  /*background-image: url("images/fond_jaune.png");*/
+  background-color: rgba(240,230,140,0.5);
+}
+
+
+.PourAllerPlusLoin img
+{
+  margin-right:auto;
+  margin-left:auto;
+  border: none;
+  box-shadow: 6px 6px 6px black;
+  border-radius: 0px 0px 0px 0px;  
+}
+
+#TitlePourAllerPlusLoin
+{
+
+  font-size: 1.2em;
+  margin-left:auto;
+  margin-right:auto; 
+  color: #760001 ; 
+}
+
+.element
+{
+	width: 150px;
+	height: 100px;
+}
+.element:nth-child(1)
+{
+	background-color: orange;
+	/*flex: 1*/;
+}
+.element:nth-child(2)
+{
+	background-color: blue;
+
+}
+.element:nth-child(3)
+{
+	background-color: #ad6;
+
+}
+
+.intro
+{
+	color: green;/*commentaire*/
+}
+
+.parag
+{
+	color: black;/*commentaire*/
+	font-size: 1.3em;
+	font-family: Impact,"Arial Black",Arial,sans-serif;
+	/*font-style: italic;*/
+	/*text-decoration: overline;*/
+	text-align: justify;
+
+}
+
+.flottant
+{
+	float: right;
+	border: 5px black solid;
+	box-shadow: 6px 6px 6px black;
+}
+
+.autreparagraphe
+{
+	clear: both;
+}

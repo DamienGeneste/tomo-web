@@ -204,9 +204,9 @@ section p
 section h2
 {
   font-size: 1.2em;
-  /*margin-left:auto;
-  margin-right:auto; */
   text-align: left;
+  margin-left:auto;
+  margin-right:auto; 
   color: #760001 ; 
 }
 

@@ -43,6 +43,7 @@ section h2, footer h1, nav a
   font-family: 'Dayrom',Arial,serif;
   font-weight: normal;
   text-transform: uppercase;
+  text-align: center;
 }
 
 /*Header*/

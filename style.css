@@ -136,7 +136,7 @@ nav a:hover
 {
     display: flex;
     justify-content: space-around;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 15px 0;
     /*max-width: 50%;*/
 }
 .bouton_rouge:nth-child(2)
@@ -242,6 +242,7 @@ section figcaption
   overflow: auto;
   font-size: 0.8em;
   font-style: italic;
+  margin: 10px 0 5px 0;
 }
 /*figure figcaption
 {

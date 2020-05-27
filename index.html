@@ -31,6 +31,15 @@
 
           <section>
 
+<div id="notice"> 
+<h2> Notice </h2>
+<p> Si vous voulez jouer sans lire les détails de l’article, vous avez juste à télécharger les grilles de jeux. Elles existent en format <a href="jeux_1a4_Excel.zip">EXCEL</a> si vous souhaitez jouer sur votre ordinateur, ou en version <a href="jeux_1a4_PDF.zip">PDF</a> si vous êtes plutôt papier-crayon et que vous pouvez les imprimer. Vous trouverez également les solutions en PDF, en extrême recours et en fin d’article. Amusez-vous bien ! </p>
+ </div>
+<figure>
+<img src="images/en_tete.png" alt="Volumes projetés" class="large" />
+<figcaption>© Dtrx / CC BY-SA 3.0 DE (https://creativecommons.org/licenses/by-sa/3.0/de/deed.en)
+</figcaption>
+</figure>
         <h2 id="p1"> La reconstruction tomographique, qu’est-ce que c’est ? <span><a href="#">[haut]</a></span> </h2>
 
         <p> C’est l’art de pouvoir reconstruire un volume à partir d’images planes. L’architecte, par exemple, peut souhaiter visualiser un bâtiment en 3 dimensions à partir de photos prises sur le site. Un médecin voudrait avoir une vision 3D de l’intérieur du corps de son patient à partir de de radiographies à rayons X . Un expert en cristallographie veut connaître la structure en 3 dimensions d’un cristal ou d’un matériau à partir des données recueillies au Microscope Electronique à Balayage (MEB) en 2 dimensions, pour en déduire ses caractéristiques physiques. Le chercheur en mécanique des fluides que je suis, lui, est intéressé par la traque des informations de vitesse dans le mouvement d’air autour d’une voiture. En filmant le passage de millions de petites particules, il peut reconstruire en 3D et en temps réel la position de chacune d’entre elles pour étudier l’aérodynamisme de l’ensemble.
@@ -74,7 +83,7 @@
        </p>
 
        <figure>
-         <img src="images/radis.jpg" alt="Plan de travail avec légumes tranchés" style="max-width:60%; min-width:500px"/>
+         <img src="images/radis.jpg" alt="Plan de travail avec légumes tranchés" class="large"/>
          <figcaption>© <a href="http://dx.doi.org/10.1016/j.addma.2016.10.006/CCBY4.0."> http://dx.doi.org/10.1016/j.addma.2016.10.006/CCBY4.0</a></figcaption>
        </figure>
 
@@ -128,7 +137,8 @@ Plus généralement, si la solution n'est pas unique, c'est qu'il manque des inf
     <p>En pratique, nous tentons ici de reconstituer une image à partir de 2 projections, C’est déjà mieux qu’une seule, qui fait disparaître toute notion de profondeur, mais comme il n’est pas rare de trouver deux images différentes qui renvoient les mêmes projections, la solution qui s’impose rapidement est d’augmenter le nombre de projections.</p> 
 
     <figure>
-      <img src="images/projection.png" alt="3 projections differentes" />
+      <img src="images/projection.png" alt="3 projections differentes" class="large"/>
+<figcaption>Ici, nous avons trois images planes dont nous donnons les projections horizontales (en orange) et verticales (en bleu). Alors que leurs projections sont rigoureusement identiques, les images elles-mêmes sont très différentes : elles ne sont même pas toutes constituées du même nombre d’objets !</figcaption>
     </figure>
 
 
@@ -179,12 +189,18 @@ Voyons cela dans un nouveau jeu : comme précédemment, les cases sont à noirc
       Damien Geneste
     </p>
     </section>
-  </div>
 
-  <footer>
-    <p>Foot</p>
-  </footer>
+
+	  <footer>
+	    <!--<p>Foot</p>-->
+
+		<div id="logo"> <p><a href="http://salon-math.fr/"><img src="images/SJMlogo.png" alt="salon des jeux maths logo" /></a></p> 
+		<p><a href="http://www.palais-decouverte.fr/fr/accueil/"><img src="images/palaislogo.png" alt="salon des jeux maths logo" /> </a></p></div>
+
+		<div id="solutions"> <a href="solutions.zip" class="bouton_sol"> Solutions </a> </div>
+	  </footer>
        
+  </div>
 
     </body>
 </html>

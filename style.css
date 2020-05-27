@@ -97,6 +97,40 @@ nav a:hover
 
 /* Corps */
 
+#notice
+{
+  display: flex;
+  flex-direction: column; 
+  border: 2px black solid;
+  /*box-shadow: 6px 6px 6px black;*/
+  /*border-radius: 15px 15px 15px 15px; */  
+  margin-left:auto;
+  margin-right:auto;
+  width: 90%;
+}
+
+#notice p
+{  
+  width: 90%;
+  text-align: justify;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 0;
+}
+
+#notice h2
+{  
+  width: 90%;
+  text-align: left;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#notice a:hover
+{
+  font-weight: bold;
+  color: #1E90FF;
+}
 .telechargement
 {
     display: flex;
@@ -104,12 +138,12 @@ nav a:hover
     margin: 10px 0 10px 0;
     /*max-width: 50%;*/
 }
-.bouton_rouge:nth-child(1)
+.bouton_rouge:nth-child(2)
 {
     height: 25px;
     right: 5px;
     bottom: 5px;
-    background-image: linear-gradient(#55AAFF,#000055);
+    background-image: linear-gradient(#B20000,#330000);/* #55AAFF,#000055*/
     border: 1px solid #000055;
     border-radius: 5px;
     font-size: 1.2em;
@@ -120,7 +154,7 @@ nav a:hover
     text-decoration: none;
   box-shadow: 6px 6px 6px black;
 }
-.bouton_rouge:nth-child(2)
+.bouton_rouge:nth-child(1)
 {
     height: 25px;
     right: 5px;
@@ -136,6 +170,9 @@ nav a:hover
     text-decoration: none;
   box-shadow: 6px 6px 6px black;
 }
+
+
+
 .telechargement a
 {
   color: white;
@@ -178,11 +215,25 @@ section img
   border: 5px black solid;
   box-shadow: 6px 6px 6px black;
   border-radius: 15px 15px 15px 15px; 
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 95%;
+  max-height: 95%;
   display: block; /* remove extra space below image */ 
 }
 
+
+.large
+{
+  margin-right:auto;
+  margin-left:auto;
+  border: 5px black solid;
+  box-shadow: 6px 6px 6px black;
+  border-radius: 15px 15px 15px 15px; 
+  max-width: 20%;
+  max-height: 30%;
+  min-width: 200px;
+  min-height: 200px;
+  display: block; /* remove extra space below image */ 
+}
 /*figure figcaption
 {
   position: absolute;
@@ -199,7 +250,10 @@ section figure
 }
 
 
-
+.signature
+{
+  text-align: right
+}
 
 /* Background */
 
@@ -282,3 +336,79 @@ section figure
 {
 	clear: both;
 }
+
+
+/* Foot  */ 
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    /*padding-top: 25px;*/
+}
+
+/*footer p
+{
+    width: 5%;
+    background-color: black;
+}*/
+
+#logo 
+{
+    display: flex;
+    justify-content: space-round;
+    display: flex;
+    justify-content: space-between; 
+
+    width: 38%;
+}
+
+#logo img 
+{
+    margin-left: 25px;    
+    margin-right: 25px; 
+     width: 95%;
+    /*background-color: black;
+     height:20%;*/
+    
+}
+
+
+#solutions
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+    /*max-width: 50%;*/
+}
+.bouton_sol:nth-child(1)
+{
+    height: 25px;
+    right: 5px;
+    bottom: 5px;
+    background-image: linear-gradient(#55AAFF,#000055);
+    border: 1px solid #000055;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    /*color: white;*/
+    text-decoration: none;
+  box-shadow: 6px 6px 6px black;
+}
+
+#solutions a
+{
+  color: white;
+}
+#solutions a:hover
+{
+  color: white;
+  text-decoration: underline;
+}
+
+/*#solutions
+{
+    width: 25%;
+    background-image: linear-gradient(#00AA00,#005500);
+}*/

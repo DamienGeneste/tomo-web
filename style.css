@@ -422,3 +422,51 @@ footer
     width: 25%;
     background-image: linear-gradient(#00AA00,#005500);
 }*/
+        canvas {
+            display: block;
+            border: 1px solid black;
+	    margin-left: 80px;
+            margin-top: 80px;
+        }
+        #chessboardContainer {
+	    position: relative;
+            display: flex;
+	    margin: 0 auto;
+        }
+        #rowCounts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #rowMentionned {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #colCounts {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .count {
+            font-weight: bold;
+            margin: 5px;
+        }
+	#resetButton {
+	    background-image: linear-gradient(#B20000,#330000);/* #55AAFF,#000055*/
+            margin-top: 50px; /* Adjust the margin-top value to move the button further below */
+	    border: 1px solid #228B22;
+    	    border-radius: 5px;
+	    font-size: 1.2em;
+	    font-weight: bold;
+	    text-align: center;
+	    color: white;
+        }
+	#resetButton:hover {
+  	    color: white;
+  	    text-decoration: underline;
+	    background-image: linear-gradient(#B20000,#330000);/* #55AAFF,#000055*/
+            margin-top: 50px; /* Adjust the margin-top value to move the button further below */
+	    font-weight: bold;
+        }

@@ -58,16 +58,30 @@
 
         <p>Un jeu proche de la tomographie existe depuis les années 70, que l’on nomme parfois nonogramme, parfois picross ou même logimage mais le principe reste exactement le même. Il s’agit de noircir autant de cases dans chaque ligne et chaque colonne que les nombres indiqués sur les côtés de la grille de jeu. Très souvent la solution permet de retrouver une image mais pas toujours. Nous avons mis un exemple ci-dessous :    </p>
 
-        <figure>
+<!--        <figure>
           <img src="images/nonogramme1.png" alt="Grille de nonogramme" />
         </figure>
         <div class="telechargement"> 
           <a href="Excel/Nonogrammes.ods.zip" class="bouton_rouge"> Excel </a>
           <a href="jeux_1a4_PDF/Nonogrammes.pdf" class="bouton_rouge"> PDF </a>
+        </div>-->
+
+    <div id="chessboardContainer">
+
+        <canvas id="chessboardCanvas" width="682" height="418"></canvas>
+        <div id="rowCounts"></div>
+    	<div id="rowMentionned"></div>	
+
+    <div id="colCounts"></div>
+    <div id="columMentionned"></div>
+  
+ </div>
+
+<div style="margin: 0 auto;"> <button id="resetButton">Reset Chessboard</button></div> 
+        <div class="telechargement"> 
+          <a href="Excel/Nonogrammes.ods.zip" class="bouton_rouge"> Excel </a>
+          <a href="jeux_1a4_PDF/Nonogrammes.pdf" class="bouton_rouge"> PDF </a>
         </div>
-
-
-
         <h2 id="p4">Et les ordinateurs, comment font-ils ?<span><a href="#">[haut]</a></span></h2>
 
 
@@ -206,5 +220,6 @@ Plus généralement, si la solution n'est pas unique, c'est qu'il manque des inf
   </div>
 
     </body>
+<script src="./js/script_New.js"></script>
 </html>
 
